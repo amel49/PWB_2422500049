@@ -19,7 +19,7 @@
              alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Ameliaa Priska Siregar</a>
+        <a href="#" class="d-block">Ameliaa Priska Siregar</a>  
       </div>
     </div>
 
@@ -34,41 +34,54 @@
         </div>
       </div>
     </div>
+    <<!-- Sidebar Menu -->
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false">
 
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Master -->
         <li class="nav-item menu-open">
-          <a href="#" class="nav-link active">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>
-              Starter Pages
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Active Page</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Inactive Page</p>
-              </a>
-            </li>
-          <li class="nav-item">
-          <a href="<?= base_url('admin/logout') ?>" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-              Logout
-              <span class="right badge badge-danger">New</span>
-            </p>
-          </a>
+            <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                    Master
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+
+            <ul class="nav nav-treeview">
+                <!-- Kategori -->
+                <li class="nav-item">
+                    <a href="<?= base_url('index.php/admin/kategori') ?>"
+                       class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kategori</p>
+                    </a>
+                </li>
+
+                <!-- Produk -->
+                <li class="nav-item">
+                    <a href="<?= base_url('index.php/admin/produk') ?>"
+                       class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Produk</p>
+                    </a>
+                </li>
+            </ul>
         </li>
-      </ul>
-    </nav>
+
+        <!-- Logout -->
+        <li class="nav-item">
+            <a href="<?= base_url('index.php/admin/logout') ?>"
+               class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>Logout</p>
+            </a>
+        </li>
+
+    </ul>
+</nav>
   </div>
 </aside>
